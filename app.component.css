@@ -1,0 +1,40 @@
+
+.numeros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 5px;
+}
+
+.numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: lightblue; /* Color de fondo predeterminado */
+    border: 1px solid #999;
+}
+
+.numero-primo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #FF0000; /* Color de fondo para números primos */
+    border: 1px solid #999;
+}
+
+/* Media Query para hacer la página responsive */
+@media screen and (max-width: 768px) {
+    .numeros-container {
+        grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    }
+}
+
+/* Otros estilos para hacer la página más atractiva */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+

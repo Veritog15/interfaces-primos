@@ -1,0 +1,818 @@
+<style>
+  
+.numeros-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 5px;
+}
+
+.numero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: lightblue; /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(5, 92, 89); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(7, 189, 250, 0.931); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(248, 163, 163); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(12, 21, 197); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(9, 235, 58); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(53, 60, 62, 0.931); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(169, 217, 13); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(5, 134, 93); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(203, 229, 185); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(219, 108, 195, 0.931); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(6, 164, 24); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(199, 102, 56); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero13 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(137, 9, 235); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero14 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(8, 117, 62); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero15 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(57, 94, 122); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero16 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(101, 115, 6); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero17 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(48, 13, 151); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero18 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(197, 16, 247, 0.931); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero19 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(149, 138, 220); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero20 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(249, 7, 156); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero21 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(214, 237, 204); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero22 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(4, 239, 251, 0.931); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero23 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(58, 65, 244); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero24 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(22, 214, 156); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero25 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(255, 214, 199); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero26 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(86, 3, 68, 0.931); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero27 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(197, 211, 250); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero28 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(10, 76, 137); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero29 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(66, 37, 89); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero30 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(1, 129, 145); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero31 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(84, 31, 39); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero32 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(7, 152, 89); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero33 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(211, 236, 98); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero34 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(250, 226, 11, 0.931); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero35 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(79, 146, 106); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero36 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(162, 166, 242); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero37 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(2, 91, 180); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero38 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(197, 237, 15); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero39 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(2, 205, 251); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero40 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(84, 5, 241); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero41 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(182, 11, 110); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero42 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(199, 103, 244, 0.931); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero43 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(67, 118, 169); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero44 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(177, 60, 5); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero45 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(102, 236, 89); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero46 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(4, 51, 160); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero47 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(103, 242, 242); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero48 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(226, 245, 107); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero49 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(130, 91, 245); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero50 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(76, 94, 178, 0.931); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero51 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(68, 194, 145); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero52 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(134, 39, 98); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero53 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(28, 56, 16); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero54 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(2, 132, 138, 0.931); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero55 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(2, 9, 203); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero56 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(226, 255, 7); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero57 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(198, 153, 137); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero58 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(125, 110, 131, 0.931); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero59 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(42, 76, 171); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero60 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(94, 169, 155); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero61 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(60, 6, 104); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero62 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(2, 223, 252); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero63 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(93, 58, 63); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero64 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(127, 131, 245); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero65 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(237, 247, 162); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero66 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(253, 153, 116); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero67 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(215, 156, 238, 0.931); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero68 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(213, 223, 252); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero69 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(171, 244, 231); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero70 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(125, 109, 137); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero71 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(101, 215, 230); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero72 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(160, 150, 151); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero73 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(104, 248, 99); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+
+.numero74 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(82, 229, 242); /* Color de fondo predeterminado */
+  border: 1px solid #999;
+}
+.numero-primo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #FF0000; /* Color de fondo para números primos */
+  border: 1px solid #999;
+}
+
+/* Media Query para hacer la página responsive */
+@media screen and (max-width: 768px) {
+  .numeros-container {
+      grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+  }
+}
+
+/* Otros estilos para hacer la página más atractiva */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+
+</style>
+  <app-root>
+    <div class="numeros-container">
+      <!-- Generar las cajas para los números del 0 al 100 -->
+      <div class="numero">0</div>
+      <div class="numero-primo">1</div>
+      <div class="numero-primo">2</div>
+      <div class="numero-primo">3</div>
+      <div class="numero1">4</div>
+      <div class="numero-primo">5</div>
+      <div class="numero2">6</div>
+      <div class="numero-primo">7</div>
+      <div class="numero3">8</div>
+      <div class="numero4">9</div>
+      <div class="numero5">10</div>
+      <div class="numero-primo">11</div>
+      <div class="numero6">12</div>
+      <div class="numero-primo">13</div>
+      <div class="numero7">14</div>
+      <div class="numero8">15</div>
+      <div class="numero9">16</div>
+      <div class="numero-primo">17</div>
+      <div class="numero10">18</div>
+      <div class="numero-primo">19</div>
+      <div class="numero11">20</div>
+      <div class="numero12">21</div>
+      <div class="numero13">22</div>
+      <div class="numero-primo">23</div>
+      <div class="numero14">24</div>
+      <div class="numero15">25</div>
+      <div class="numero16">26</div>
+      <div class="numero17">27</div>
+      <div class="numero18">28</div>
+      <div class="numero-primo">29</div>
+      <div class="numero19">30</div>
+      <div class="numero-primo">31</div>
+      <div class="numero20">32</div>
+      <div class="numero21">33</div>
+      <div class="numero22">34</div>
+      <div class="numero23">35</div>
+      <div class="numero24">36</div>
+      <div class="numero-primo">37</div>
+      <div class="numero25">38</div>
+      <div class="numero26">39</div>
+      <div class="numero27">40</div>
+      <div class="numero-primo">41</div>
+      <div class="numero28">42</div>
+      <div class="numero-primo">43</div>
+      <div class="numero29">44</div>
+      <div class="numero30">45</div>
+      <div class="numero31">46</div>
+      <div class="numero-primo">47</div>
+      <div class="numero32">48</div>
+      <div class="numero33">49</div>
+      <div class="numero34">50</div>
+      <div class="numero35">51</div>
+      <div class="numero36">52</div>
+      <div class="numero-primo">53</div>
+      <div class="numero37">54</div>
+      <div class="numero38">55</div>
+      <div class="numero39">56</div>
+      <div class="numero40">57</div>
+      <div class="numero41">58</div>
+      <div class="numero-primo">59</div>
+      <div class="numero42">60</div>
+      <div class="numero-primo">61</div>
+      <div class="numero43">62</div>
+      <div class="numero44">63</div>
+      <div class="numero45">64</div>
+      <div class="numero46">65</div>
+      <div class="numero47">66</div>
+      <div class="numero-primo">67</div>
+      <div class="numero48">68</div>
+      <div class="numero49">69</div>
+      <div class="numero50">70</div>
+      <div class="numero-primo">71</div>
+      <div class="numero51">72</div>
+      <div class="numero-primo">73</div>
+      <div class="numero52">74</div>
+      <div class="numero53">75</div>
+      <div class="numero54">76</div>
+      <div class="numero55">77</div>
+      <div class="numero56">78</div>
+      <div class="numero-primo">79</div>
+      <div class="numero57">80</div>
+      <div class="numero58">81</div>
+      <div class="numero59">82</div>
+      <div class="numero-primo">83</div>
+      <div class="numero60">84</div>
+      <div class="numero61">85</div>
+      <div class="numero62">86</div>
+      <div class="numero63">87</div>
+      <div class="numero64">88</div>
+      <div class="numero-primo">89</div>
+      <div class="numero65">90</div>
+      <div class="numero66">91</div>
+      <div class="numero67">92</div>
+      <div class="numero68">93</div>
+      <div class="numero69">94</div>
+      <div class="numero70">95</div>
+      <div class="numero71">96</div>
+      <div class="numero-primo">97</div>
+      <div class="numero72">98</div>
+      <div class="numero73">99</div>
+      <div class="numero74">100</div>
+      
+    </div>
+  </app-root>
+  
+
+
